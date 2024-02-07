@@ -1,0 +1,23 @@
+
+.back{
+  background-image: url('https://wallpapercave.com/wp/wp5391601.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  
+}
+.cont{
+    max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  position: relative;
+  left: 400px;
+  top: 100px;
+  background-color: transparent;
+}
+.create_head{
+  font-weight: 500;
+}

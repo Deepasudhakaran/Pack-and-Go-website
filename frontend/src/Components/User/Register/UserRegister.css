@@ -1,0 +1,78 @@
+
+  .registerimage{
+    background-image: url("https://www.worldatlas.com/r/w1200/upload/bb/60/f3/shutterstock-389133124.jpg");
+    
+  }
+  .logimage{
+    background-image: url('https://d3d5bpai12ti8.cloudfront.net/wp-content/uploads/20200911134852/Rajasthan-Approves-New-Tourism-Policy-With-Focus-On-Lesser-known-Destinations.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ 
+  }
+  .register-page {
+    width: 500px;
+    margin: auto;
+  }
+  .register-page .form .register{
+    margin-top: 0;
+  margin-bottom: 26px;
+  
+  }
+  
+  .userregi {
+    
+      position: relative;
+      z-index: 1;
+      background:transparent;
+      border: 2px solid rgba(255, 255, 255,5);
+      max-width: 520px;
+      margin: 0 auto 100px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      position: fixed;
+      border: 2px solid rgb(0, 0, 0);
+     
+     
+    }
+    .userregi input {
+      font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    
+    .userregi button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background-image: linear-gradient(45deg,rgb(49, 1, 1), #ff1616);
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+    .error-message{
+        color: red;
+        font-size: 10px;
+    }
+    .register-header{
+      position: relative;
+      top: 10px;
+      /* margin-top: -40px;
+      margin-bottom: 10px; */
+    }
+    .ptag{
+    margin-top: 4px;
+      color: white;
+    }

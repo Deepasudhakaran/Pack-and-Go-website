@@ -1,0 +1,81 @@
+
+/* .body-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("C:\Users\HP\Downloads\jordan-graff-9TBgvuPAe0Y-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   */
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f8f2f2;
+  }
+  
+  .search-container {
+    display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  position: relative;
+  left: 400px;
+   
+  }
+  
+  .search-input {
+    padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 100px);
+  }
+  
+  .button-search {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 35%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .button-search:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+   
+   
+  }
+  
+  
+  .suggestion-list li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e4dcdc;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    
+  }
+  
+  .suggestion-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+  

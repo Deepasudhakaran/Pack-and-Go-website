@@ -1,0 +1,175 @@
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cd {
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  margin-top: -70px;
+  margin-bottom: 40px;
+  grid-template-rows: 500px;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 10px;
+}
+
+.mh {
+  margin-top: 100px;
+}
+
+.hcard {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: azure;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.50%;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0.5rem 0 2rem 0;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.cardhead {
+  position: relative;
+  right: 400px;
+  margin-top: -50px;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .cd {
+      grid-template-columns: repeat(3, 300px);
+      margin-left: 90px;
+  }
+
+  .cardhead {
+      right: 100px;
+      margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cd {
+      grid-template-columns: repeat(2, 270px);
+      margin-left: 120px;
+  }
+
+  .cardhead {
+      right: 0;
+      
+  }
+}
+
+
+
+
+/* @media screen and (max-width: 768px) {
+  .hero-text {
+    width: 90%; 
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+ */
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.button-search {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    
+  }
+
+  .search-input {
+    
+    margin-bottom: 10px;
+  }
+
+  .button-search {
+    width: 100%;
+  }
+
+  .hero-text {
+    width: 90%; 
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
