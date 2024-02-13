@@ -49,7 +49,6 @@ export const getDetails = async (id) => {
 };
 
 export const Createuserreview = async (postId, postData) => {
-  // console.log(postId, "11111")
   try {
     console.log('FormData:', postData);
     const response = await UserIntances.post(`/createreview/${postId}`, { ...postData, postId });

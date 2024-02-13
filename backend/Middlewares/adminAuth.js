@@ -3,7 +3,6 @@ const Admin = require('../Model/AdminModel')
 
 require('dotenv').config();
 
-
 module.exports = async (req, res, next) => {
   
   try{

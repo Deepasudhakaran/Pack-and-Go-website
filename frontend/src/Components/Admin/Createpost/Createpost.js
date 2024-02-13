@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import './Createpost.css';
 
-
 const validationSchema = Yup.object().shape({
   title: Yup.string().required('Title is required'),
   location: Yup.string().required('Location is required'),

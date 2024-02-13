@@ -5,9 +5,9 @@ import Navbar from '../../Components/Admin/adminNavbar/Navbar';
 const AdminNotification = () => {
   return (
     <div>
-        <Navbar/>
-      <Notification/>
-      
+      <Navbar />
+      <Notification />
+
     </div>
   );
 }

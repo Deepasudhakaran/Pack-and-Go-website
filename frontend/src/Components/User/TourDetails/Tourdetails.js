@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getDetails, getUserReviewList } from '../../../Services/Userapi';
 import './Tourdetails.css';
+import './Review.css'
 import Star from '../Star/Star';
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -37,7 +38,6 @@ const Tourdetails = () => {
     const fetchPostDetails = async () => {
       try {
         const userToken = localStorage.getItem('userToken');
-        // console.log('User Token', userToken);
         if (userToken) {
 
           setLoading(true);

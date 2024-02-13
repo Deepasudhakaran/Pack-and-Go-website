@@ -123,8 +123,6 @@ const Adduser = () => {
 
 
               <button type='submit'>Register</button>
-
-
             </form>
           </div>
         </div>

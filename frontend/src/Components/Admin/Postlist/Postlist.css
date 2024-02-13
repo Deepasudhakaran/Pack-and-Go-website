@@ -1,31 +1,27 @@
-
 .card-container {
-    display: flex;
-    justify-content: space-between; /* Adjust this property as needed */
-  }
-  
-  
-  .cd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cd {
   display: grid;
   justify-content: center;
   place-items: center;
   width: 100%;
   margin-top: -70px;
   margin-bottom: 40px;
-  
   grid-template-rows: 500px;
   grid-template-columns: repeat(4, 300px);
-  grid-gap:10px;
-  }
-  
+  grid-gap: 10px;
+}
+.mh {
+  margin-top: 100px;
+}
 
-  .mh{
-    margin-top: 100px;
-  }
-  .hcard{
-   text-decoration: none;
-   border-radius: 5px;
-   padding: 5px;
-   color: azure;
-    
-  }
+.hcard {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: azure;
+
+}

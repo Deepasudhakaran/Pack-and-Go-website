@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap'
-import './Userhome.css'
+import './Userhome.css';
+import './Search.css';
 import Usernavbar from '../Navbar/Usernavbar';
 import { Link, useNavigate } from 'react-router-dom';
 import { getPostList, handleSearch } from '../../../Services/Userapi';
@@ -78,7 +79,7 @@ const Userhome = () => {
                 onChange={onInputChange}
                 placeholder="Search for a place..."
               />
-              <button onClick={onSearch} className="button-search" style={{backgroundColor: "rgb(255, 94, 0)"}}>
+              <button onClick={onSearch} className="button-search" style={{ backgroundColor: "rgb(255, 94, 0)" }}>
                 Search
               </button>
             </div>
@@ -102,13 +103,11 @@ const Userhome = () => {
                   <div>
                     <p >{user.location}</p>
                   </div>
-                  <Link to={`/tourdetails/${user._id}`} variant='primary' style={{ backgroundColor: "rgb(255, 94, 0)" , border: "2px solid black "}} className='hcard' >More details</Link>
+                  <Link to={`/tourdetails/${user._id}`} variant='primary' style={{ backgroundColor: "rgb(255, 94, 0)", border: "2px solid black " }} className='hcard' >More details</Link>
                 </Card.Body>
               </Card>
             </div>
           ))}
-
-
         </div>
       </div>
 

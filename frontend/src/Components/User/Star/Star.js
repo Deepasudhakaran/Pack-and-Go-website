@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaStar, FaRegStar } from 'react-icons/fa'; // You can use any icon library you prefer
+import { FaStar, FaRegStar } from 'react-icons/fa';
 
 const Star = ({ rating }) => {
 

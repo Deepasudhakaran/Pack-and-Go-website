@@ -226,10 +226,6 @@ exports.AdminsignUp = async (req, res) => {
 
 
 
-
-
-
-
 exports.getAdminNotifionList = async (req, res) => {
   try {
     const users = await Message.find();

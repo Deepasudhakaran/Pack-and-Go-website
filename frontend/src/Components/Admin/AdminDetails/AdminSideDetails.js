@@ -196,8 +196,8 @@ const AdminSideDetails = () => {
         </div>
 
       </div>
-      <Link className='btn btn-sm btn-primary' style={{ width: '150px', height: "50px", marginTop: '20px', marginBottom: '20px', textAlign:"center", fontSize:'20px' }} to={`/admin/adminupdatepage/${postDetails._id}`}>Edit</Link>
-      <button className='btn btn-sm btn-danger ms-2' style={{ width: '150px', height: "50px", marginTop: '20px', marginBottom: '20px', fontSize:'20px' }} onClick={() => handlePostDelete(postDetails._id)}>Delete</button>
+      <Link className='btn btn-sm btn-primary' style={{ width: '150px', height: "50px", marginTop: '20px', marginBottom: '20px', textAlign: "center", fontSize: '20px' }} to={`/admin/adminupdatepage/${postDetails._id}`}>Edit</Link>
+      <button className='btn btn-sm btn-danger ms-2' style={{ width: '150px', height: "50px", marginTop: '20px', marginBottom: '20px', fontSize: '20px' }} onClick={() => handlePostDelete(postDetails._id)}>Delete</button>
     </div>
   );
 }
