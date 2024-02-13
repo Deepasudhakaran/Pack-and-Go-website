@@ -78,7 +78,7 @@ const Userhome = () => {
                 onChange={onInputChange}
                 placeholder="Search for a place..."
               />
-              <button onClick={onSearch} className="button-search">
+              <button onClick={onSearch} className="button-search" style={{backgroundColor: "rgb(255, 94, 0)"}}>
                 Search
               </button>
             </div>
@@ -102,7 +102,7 @@ const Userhome = () => {
                   <div>
                     <p >{user.location}</p>
                   </div>
-                  <Link to={`/tourdetails/${user._id}`} variant='primary' style={{ backgroundColor: "rgb(255, 94, 0)" }} className='hcard' >More details</Link>
+                  <Link to={`/tourdetails/${user._id}`} variant='primary' style={{ backgroundColor: "rgb(255, 94, 0)" , border: "2px solid black "}} className='hcard' >More details</Link>
                 </Card.Body>
               </Card>
             </div>

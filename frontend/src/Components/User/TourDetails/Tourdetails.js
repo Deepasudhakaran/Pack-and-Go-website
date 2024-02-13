@@ -13,7 +13,7 @@ const Tourdetails = () => {
   const [error, setError] = useState(null);
 
   const { id } = useParams();
-  console.log(id, "88888888");
+  
 
   const [reviewList, setReviewList] = useState([]);
   const [selectedStar, setSelectedStar] = useState(null);
@@ -37,7 +37,7 @@ const Tourdetails = () => {
     const fetchPostDetails = async () => {
       try {
         const userToken = localStorage.getItem('userToken');
-        console.log('User Token', userToken);
+        // console.log('User Token', userToken);
         if (userToken) {
 
           setLoading(true);

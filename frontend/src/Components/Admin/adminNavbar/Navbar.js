@@ -41,9 +41,9 @@ const Navbar = () => {
           <li>
             <Link to='/admin/Viewpost'>POST LIST</Link>
           </li>
-          {/* <li>
+          <li>
             <Link to='/admin/notification'>NOTIFICATION</Link>
-          </li> */}
+          </li>
           <li>
             <button onClick={handleLogut} className="logout-company">
               Logout

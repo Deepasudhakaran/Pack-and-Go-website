@@ -53,6 +53,9 @@ exports.getUserList = async (req, res) => {
   }
 };
 
+
+
+
 exports.blockUser = async (req, res) => {
   try {
     const { userId } = req.params;
@@ -172,6 +175,7 @@ exports.deletePost = async (req, res) => {
 };
 
 
+
 exports.updatePost = async (req, res) => {
   try {
     console.log('Received update request:', req.body);
@@ -179,19 +183,17 @@ exports.updatePost = async (req, res) => {
     const { title, location, price, duration, description, highlights, inclusions, exclusion, information, latitude, longitude } = req.body;
     const { file, file2 } = req.files || {};
     const updateObject = {
-      title, location, price, duration, description, highlights, inclusions, exclusion, information, file, file2
+      title, location, price, duration, description, highlights, inclusions, exclusion, information, latitude, longitude
     };
     if (file) {
-      updateObject.file = file.path;
+      updateObject.file = file[0].filename;
     }
     if (file2) {
-      updateObject.file2 = file2.path;
+      updateObject.file2 = file2[0].filename;
     }
     const updatePost = await Post.findByIdAndUpdate(
       req.params.id,
       updateObject,
-      updateObject.file,
-      updateObject.file2,
       { new: true }
     );
     res.json(updatePost);
@@ -201,6 +203,7 @@ exports.updatePost = async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
+
 
 
 exports.AdminsignUp = async (req, res) => {
@@ -223,7 +226,11 @@ exports.AdminsignUp = async (req, res) => {
 
 
 
-exports.getAdminNotificationList = async (req, res) => {
+
+
+
+
+exports.getAdminNotifionList = async (req, res) => {
   try {
     const users = await Message.find();
     res.status(200).json({ users });
@@ -232,6 +239,20 @@ exports.getAdminNotificationList = async (req, res) => {
     res.status(500).json({ message: 'Internal Server Error' });
   }
 };
+
+
+
+
+exports.deleteMessage = async (req, res) => {
+  try {
+    const deletedMessage = await Message.findByIdAndDelete(req.params.id);
+    res.json(deletedMessage);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
 
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Usernavbar.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,6 +8,7 @@ import { userHeader } from '../../../Services/Userapi';
 const Usernavbar = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+  const [click , setClickes] = useState("")
   useEffect(() => {
     userHeader()
       .then((res) => {
@@ -21,17 +22,31 @@ const Usernavbar = () => {
   const handleLogout = () => {
     dispatch(setUserDetails(""));
   };
+
+  const handleClick = () => {
+    setClickes(!click)
+}
+  
   return (
     <div>
-      <div className="user-nav">
+      <div className="NavbarItems">
         <h2 className='navlogo'>
           Pack<span>&</span>Go</h2>
-        <ul>
+          <div className="menu-icons" onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} style={{color:"black"}}></i>
+        </div>
+
+        <ul onClick={handleClick}
+          className={click ? 'nav-menu active' : 'nav-menu'}>
+            
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="nav-links">Home</Link>
           </li>
           <li>
-            <Link to="/Usercontactpage">Contact</Link>
+            <Link to="/about" className="nav-links">About</Link>
+          </li>
+          <li>
+            <Link to="/Usercontactpage" className="nav-links">Contact</Link>
           </li>
           <li>
             {user.value ? (
@@ -39,7 +54,7 @@ const Usernavbar = () => {
                 <button onClick={handleLogout} className="logout">Logout</button>
               </div>
             ) : (
-              <Link to="/userregister" className="logout">Register</Link>
+              <Link to="/userregister" style={{color:'white'}} className="login2">Register</Link>
             )}
           </li>
         </ul>

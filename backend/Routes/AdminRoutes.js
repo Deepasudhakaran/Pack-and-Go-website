@@ -20,11 +20,12 @@ router.get('/admin/userlist', adminAuthMiddleware, adminController.getUserList);
 router.get('/admin/postlist', adminAuthMiddleware, adminController.getAdminList)
 router.get('/adminpostdetails/:id', adminController.getAdminDetails);
 router.get('/adminreviewlist/:postId', adminController.getAdminReviewList);
-router.get('/admincreatemessage', adminAuthMiddleware, adminController.getAdminNotificationList);
+router.get('/admincreatemessage', adminAuthMiddleware, adminController.getAdminNotifionList);
+
 
 router.delete('/adminreviewlist/:postId', adminController.deleteReview);
 router.delete('/adminpostdetails/:id', adminController.deletePost);
-
+router.delete('/admin/admincreatemessage/:id', adminController.deleteMessage);
 
 
 module.exports = router;

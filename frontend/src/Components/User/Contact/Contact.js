@@ -57,9 +57,6 @@ const Contact = () => {
                 <div className="invalid-feedback">{formik.errors.name}</div>
               )}
               <br />
-              {/* <textarea
-                class="form-control"
-                rows="10" placeholder="MESSAGE" name="message" required></textarea> */}
 
               <textarea
                 name="message"

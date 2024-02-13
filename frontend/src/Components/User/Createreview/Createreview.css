@@ -1,15 +1,14 @@
 
 .back{
-  background-image: url('https://wallpapercave.com/wp/wp5391601.jpg');
+  background-image: url('https://wallpapertag.com/wallpaper/full/8/7/e/221119-travel-background-1920x1080-laptop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
-  
+  background-position: center; /* Center the background image */
 }
 .cont{
     max-width: 800px;
-  background: #fff;
+ 
   width: 800px;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -20,4 +19,16 @@
 }
 .create_head{
   font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cont {
+    width: 90%; 
+    padding: 15px; 
+    top: 50px; 
+  }
+  .back{
+   background-size: cover;
+  }
 }

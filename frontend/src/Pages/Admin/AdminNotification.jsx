@@ -7,6 +7,7 @@ const AdminNotification = () => {
     <div>
         <Navbar/>
       <Notification/>
+      
     </div>
   );
 }

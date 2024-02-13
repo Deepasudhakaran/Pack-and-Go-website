@@ -131,3 +131,17 @@ export const getAdminNotificationList = async () => {
   }
 };
 
+
+
+export const deleteMessage = async (id) => {
+  try {
+    const response = await adminInstances.delete(`/admin/admincreatemessage/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+
+
+

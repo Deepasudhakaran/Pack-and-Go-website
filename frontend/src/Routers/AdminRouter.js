@@ -23,7 +23,7 @@ const AdminRouter = () => {
         <Route path='/viewpost' element={<AdminPostListPage />} />
         <Route path='/adminpostdetails/:id' element={<AdminPostDetailPage />} />
         <Route path='/adminupdatepage/:id' element={<AdminUpdatePage />} />
-        <Route path='/admin/notification' element={<AdminNotification/>}/>
+        <Route path='/notification' element={<AdminNotification/>}/>
 
       </Routes>
     </div>

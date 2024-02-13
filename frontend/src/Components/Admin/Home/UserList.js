@@ -9,7 +9,7 @@ const UserList = () => {
   const fetchUserList = async () => {
     try {
       const adminToken = localStorage.getItem('adminToken');
-      console.log('Admin Token', adminToken);
+      // console.log('Admin Token', adminToken);
       if (adminToken) {
 
         const response = await getAdminUserList(adminToken);

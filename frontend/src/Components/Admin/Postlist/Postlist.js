@@ -12,7 +12,6 @@ const Postlist = () => {
     const fetchPostList = async () => {
       try {
         const adminToken = localStorage.getItem('adminToken');
-        console.log('Admin Token', adminToken);
         if(adminToken) {
 
         const response = await getAdminList (adminToken);
