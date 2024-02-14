@@ -3,10 +3,6 @@
   left: -540px;
   margin-top: 10px;
 }
-
-
-
-
 .detailpage {
   margin-top: 80px;
 }
@@ -230,6 +226,7 @@
 
   .testimonial-heading h1 {
     font-size: 1.4rem;
+ 
   }
 }
 
@@ -293,4 +290,89 @@
   right: 550px;
   margin-bottom: 20px;
 
+}
+
+@media (max-width: 768px) {
+  .customer-review {
+    font-size: 1.8rem;
+    left: 10px; 
+  }
+  .craete {
+    font-size: 1.3rem;
+    left: 10px;
+  }
+  .review-star-filter {
+    right: auto;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-top: 10px; 
+  }
+  .map-section {
+    right: auto;
+    left: 30%;
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+  }
+  .gmap-frame {
+    font-size: 1.8rem; 
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px; 
+  }
+}
+
+@media(max-width:1060px) {
+  .customer-review {
+    font-size: 2rem;
+    left: -150px; 
+  }
+  .craete {
+    font-size: 1.3rem;
+    left: -150px;
+    margin-top: 15px; 
+  }
+  .review-star-filter {
+    right: auto;
+    left: -5%;
+    transform: translateX(-50%);
+    margin-top: -5px; 
+  }
+  .gmap-frame {
+    font-size: 1.8rem; 
+    right: auto;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-bottom: 10px; 
+  }
+  
+}
+
+@media(max-width:340px) {
+  .customer-review {
+    font-size: 2rem;
+    left: 50px; 
+  }
+  .craete {
+    font-size: 1.3rem;
+    left: 50px;
+    margin-top: 15px; 
+  }
+  .review-star-filter {
+    right: auto;
+    left: 65%;
+    transform: translateX(-50%);
+    margin-top: -5px; 
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-list p {
+    font-size: 16px; 
+    position: relative;
+    left: 400px;
+    /* margin-top: -50px; */
+    
+  }
 }
